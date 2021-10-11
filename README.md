@@ -1,6 +1,4 @@
-# Ecommerce-Flipkart-Back-End
-# Basic-Setup-Rest-Api-Express
-## For installation
+# For installation
 npm i express dotenv ejs mongoose multer cookie-parser express-validator jsonwebtoken bcrypt http-errors morgan cors
    
 ### what's work 
