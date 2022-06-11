@@ -14,6 +14,10 @@ var productSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    quantity: {
+        type: Number,
+        required: true
+    },
     description: {
         type: String,
         required: true,
@@ -34,9 +38,13 @@ var productSchema = new mongoose.Schema({
         }
     ],
     category: {
-        type: mongoose.Schema.Types.ObjectId, ref: 'Category'
+        type: mongoose.Schema.Types.ObjectId, ref: 'Category',
+        required: true
     },
-    createBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+    createBy: {
+        type: mongoose.Schema.Types.ObjectId, ref: 'User',
+        required: true
+    },
     updateAt: Date
 }, { timestamps: true });
 
