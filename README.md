@@ -13,3 +13,6 @@ bcrypt = for password hash </br>
 morgan = Morgan is a HTTP request logger middleware for Node </br>
 cors = This policy is used to secure a certain web server from access by other website or domain.. </br>
 
+npm install --save multer
+npm install --save shortid
+
