@@ -14,9 +14,13 @@ app.use(express.json());
 const authRoutes = require('./routes/auth');
 const authAdminRoutes = require('./routes/admin/auth');
 const categoryRoutes = require('./routes/category');
+const productRoutes = require('./routes/product');
+
 app.use('/api', authRoutes)
 app.use('/api', authAdminRoutes)
 app.use('/api', categoryRoutes)
+app.use('/api', productRoutes)
+
 
 //database
 require('../config/dbConnect')();
